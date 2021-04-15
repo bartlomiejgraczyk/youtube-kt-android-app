@@ -13,7 +13,7 @@ class MainActivity : YouTubeBaseActivity(), YouTubePlayer.OnInitializedListener,
                      YouTubePlayer.PlaybackEventListener, View.OnClickListener {
 
     companion object {
-        const val API_KEY: String = "AIzaSyDj5nBzha-2kjyQZrwH5Zr0iCHW95a4-Nk"
+        const val API_KEY: String = "put your own YouTube API key here"
         private val VIDEOS_IDs: List<String> = listOf("Tm8LGxTLtQk", "pyi0ZfuIIvo", "RRKJiM9Njr8")
     }
 
