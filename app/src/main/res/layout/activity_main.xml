@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/stopBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ytView"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="-10dp"
+        android:layout_toStartOf="@+id/playBtn"
+        android:clickable="true"
+        android:contentDescription="@string/stop_desc"
+        app:backgroundTint="@android:color/holo_orange_dark"
+        app:srcCompat="@drawable/ic_baseline_stop_24"
+        app:tint="@color/white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/previousVideoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ytView"
+        android:layout_marginTop="-40dp"
+        android:layout_marginEnd="-25dp"
+        android:layout_toStartOf="@+id/playBtn"
+        android:clickable="true"
+        android:contentDescription="@string/prev_desc"
+        android:scaleX="0.75"
+        android:scaleY="0.75"
+        android:src="@drawable/ic_baseline_fast_rewind_24"
+        app:backgroundTint="@android:color/holo_red_light"
+        app:tint="#000" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/nextVideoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ytView"
+        android:layout_marginStart="-25dp"
+        android:layout_marginTop="-40dp"
+        android:layout_toEndOf="@+id/playBtn"
+        android:clickable="true"
+        android:contentDescription="@string/next_desc"
+        android:scaleX="0.75"
+        android:scaleY="0.75"
+        android:src="@drawable/ic_baseline_fast_forward_24"
+        app:backgroundTint="@android:color/holo_red_light"
+        app:tint="#000" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/playBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ytView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-5dp"
+        android:clickable="true"
+        android:contentDescription="@string/play_desc"
+        android:maxWidth="120dp"
+        android:maxHeight="120dp"
+        android:scaleX="1.25"
+        android:scaleY="1.25"
+        app:backgroundTint="@android:color/holo_red_dark"
+        app:maxImageSize="48dp"
+        app:srcCompat="@drawable/ic_baseline_play_arrow_36"
+        app:tint="@color/white" />
+
+    <view
+        android:id="@+id/ytView"
+        class="com.google.android.youtube.player.YouTubePlayerView"
+        android:layout_width="match_parent"
+        android:layout_height="264dp" />
+</RelativeLayout>

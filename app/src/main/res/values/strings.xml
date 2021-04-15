@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">YouTube player</string>
+    <string name="play_desc">Play/Pause video button</string>
+    <string name="stop_desc">Stop video button</string>
+    <string name="prev_desc">Previous video button</string>
+    <string name="next_desc">Next video button</string>
+</resources>
